@@ -1,0 +1,44 @@
+/*Conceptualisation:
+1 - Créer une grille de 3*3 cases en html  - ok
+    a- une div par case soit 9 div
+    b- donner un id différent à chacune
+
+2 - Créer un tableau mutidimensionnel de 3*3 cases vide. 
+Il sera utiliser pour stocker les choix des 2 joueurs 
+et sera celui de la partie.
+
+3 - Créer des tableaux multidimensionnels qui reprennent les options pour gagner. Ils permettront de comparer le jeux pour voir si victoire ou défaite.
+
+4 - Créer un bouton "Démarrer" pour lancer le jeu.
+    a - le créer en html
+    b - il doit reset le jeu 
+        - effacer l'eventuel contenu de la grille de la partie
+        - rappeler les regles et indiquer comment choisir une case
+        - Indiquer que le joueur 1 commence
+    
+
+5- Déroulement du jeu
+    a - indiquer au joueur 1 qu'il peut choisir une case - lui rapeller qu'il joue avec les X
+    b - faire apparaitre une croix dans la case choisie
+    c - stocker le choix du joueur 1 dans le tableau de la partie
+    d - comparer le tableau de la partie aux tableaux multidimensionsels "solution"
+    e - si gagnant:
+        - Message de victoire avec le nom du joueur1
+        - ne pas prendre en compte les autres click sur la grille
+        - proposer aux joueurs de refaire une partie en cliquant sur le bouton "Démarrer"
+    f - si pas de victoire mais qu'il reste des cases vides dans la grille de la partie
+        - indiquer au joueur 2 de choisir une case - lui rapeller qu'il joue avec les O
+    g - faire apparaitre un O dans la case choisie
+    h - stocker le choix du joueur 2 dans le tableau de la partie
+    i - comparer le tableau de la partie aux tableaux "solution"
+    j - si gagnant:
+        - Message de victoire avec le nom du joueur2
+        - ne pas prendre en compte les autres click sur la grille
+        - proposer aux joueurs de refaire une partie en cliquant sur le bouton "Démarrer"
+    k - si pas de victoire mais qu'il reste des cases vides dans la grille de jeu
+        - repartir à l'étape a
+    l - si pas de victoire mais que la grille de la partie est pleine
+        - indiquer le message perdu
+        - proposer aux joueurs de refaire une partie en cliquant sur le bouton "Démarrer"
+
+*/
